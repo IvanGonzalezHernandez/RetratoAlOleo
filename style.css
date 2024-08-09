@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --main-bg-color: #fcfcfc;
+    --second-bg-color: #000;
+    --text-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    scroll-padding-top: 90px;
+}
+
+body {
+    background: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+.heading {
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25d366;
+    color: var(--second-bg-color);
+    padding: 18px 30px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.whatsapp-btn i {
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebc59;
+    transform: scale(1.05);
+}
+
+
+.whatsapp-btn i {
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+/* Promo Banner */
+
+.promo-banner {
+    width: 100%;
+    background-color: var(--second-bg-color);
+    color: var(--main-bg-color);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+}
+
+.promo-banner p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    padding: 20px 0;
+    background: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 32px;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    color: var(--text-color);
+    font-size: 2.4em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: "Dancing Script", cursive;
+}
+
+.header .logo span {
+    color: var(--second-bg-color);
+}
+
+#menu-icon {
+    display: none;
+    font-size: 2em;
+    color: var(--text-color);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background: var(--second-bg-color);
+    color: var(--main-bg-color);
+    border-radius: 5px;
+}
+
+/* Hero Section */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    filter: brightness(50%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 6em;
+    margin-bottom: 0.2em;
+    font-family: "Dancing Script", cursive;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+/*Galería*/
+
+.gallery {
+    padding: 60px;
+    background-color: var(--main-bg-color);
+    text-align: center;
+}
+
+.gallery-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.gallery-box a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gallery-box a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-box a:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*Información*/
+
+.information {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    max-width: 1200px;
+    margin: 75px auto;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--second-bg-color);
+}
+
+.information-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 40px;
+    color: var(--second-bg-color);
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--second-bg-color);
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--second-bg-color);
+    line-height: 1.6em;
+}
+
+.image-content {
+    flex: 1;
+    text-align: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+}
+
+/*Preguntas Frecuentes*/
+
+.questions {
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.questions-p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.questions-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.questions-padding {
+    padding: 10px;
+    border: 1px solid var(--second-bg-color);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.questions-title {
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.questions-answer p {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: var(--second-bg-color);
+}
+
+.questions-arrow i {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+
+.questions-offer {
+    text-align: center;
+    margin: 60px;
+}
+
+.questions-offer a{
+    margin-top: 20px;
+}
+
+/* Footer */
+
+.footer {
+    background: var(--second-bg-color);
+    color: var(--main-bg-color);
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: var(--main-bg-color);
+}
+
+.footer p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: var(--main-bg-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-socials a {
+    color: var(--main-bg-color);
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid var(--main-bg-color);
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Media Queries*/
+
+@media (max-width: 1200px) {
+    .gallery-box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .information {
+
+        box-shadow: none;
+    }
+    .information-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-point {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .text-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .second-point .text-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 992px) {   
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--main-bg-color);
+    }
+    
+    .navbar.active {
+        display: flex;
+    }
+    
+    #menu-icon {
+        display: block;
+    }
+    .gallery-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero h1 {
+        font-size: 4em;
+    }
+    .hero p {
+        font-size: 1.2em;
+    }
+    .header .logo {
+        font-size: 2em;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    
+    .gallery-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .promo-banner p {
+        font-size: 0.85em; /* Reducir aún más el tamaño de la fuente para pantallas muy pequeñas */
+    }
+    .promo-banner {
+        padding: 8px 0; /* Reducir aún más el padding */
+    }
+    .header .logo {
+        font-size: 1.5em;
+    }
+    .whatsapp-btn {
+        padding: 15px 20px;
+        font-size: 1em;
+    }
+    .hero h1 {
+        font-size: 3em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .questions-title {
+        font-size: 1rem;
+    }
+    .text-content h2 {
+        font-size: 1.5rem;
+    }
+    .text-content p {
+        font-size: 1rem;
+    }
+    .image-content img {
+        max-width: 200px;
+    }
+}
