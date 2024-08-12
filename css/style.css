@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --main-color: #6C4F4F;     /* Marrón cálido, acogedor y sofisticado */
+    --second-color: #FF6F61;   /* Coral vibrante, para destacar */
+    --accent-color: #FDF5E6;   /* Marfil, para un contraste suave */
+    --text-color: #3E2723;     /* Marrón oscuro, para un texto legible */
+    --background-color: #FAEBD7; /* Fondo beige claro y cálido */
+    --highlight-color: #FF8C00; /* Naranja oscuro, para resaltar elementos */
+}
+
+
+
+
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--second-color);
+}
+
+.button {
+    background-color: var(--second-color);
+    color:var(--accent-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--highlight-color);
+}
+
+
+/*Promo*/
+
+.prommo {
+    text-align: center;                  
+    background-color: var(--second-color); 
+    padding: 5px;                         
+    color: var(--accent-color);                           
+    font-size: 1.2em;                                      
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.logo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.logo a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../img/hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: var(--accent-color);
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+    z-index: 3;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+
+
+/*Reseñas*/
+
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--main-color);
+    color: var(--accent-color);
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    padding: 20px;
+    position: relative;
+}
+
+.slide.active {
+    display: block;
+}
+
+.client-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.country-flag {
+    width: 30px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+.slider-nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.slider-nav i {
+    cursor: pointer;
+    font-size: 2.5em;
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+}
+
+.slider-nav i:hover {
+    color: var(--second-color);
+}
+
+
+
+/*Contacto*/
+
+.contact {
+    background-color: var(--background-color);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--accent-color);
+    border-radius: 8px;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+
+.contact p {
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+/*Footer*/
+
+.footer {
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo a {
+    font-size: 1.5em;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.footer-nav {
+    margin: 20px 0;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-nav li {
+    margin: 0;
+}
+
+.footer-nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-socials {
+    margin: 20px 0;
+}
+
+.footer-socials a {
+    color: var(--accent-color);
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-socials a:hover {
+    color: var(--second-color);
+}
+
+.footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
