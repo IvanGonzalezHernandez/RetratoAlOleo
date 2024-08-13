@@ -35,28 +35,33 @@ a:hover {
 
 .button {
     background-color: var(--second-color);
-    color:var(--accent-color);
+    color: var(--accent-color);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1em;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover {
     background-color: var(--highlight-color);
 }
 
-
-/*Promo*/
+/* Promo Section */
 
 .prommo {
-    text-align: center;                  
-    background-color: var(--second-color); 
-    padding: 5px;                         
-    color: var(--accent-color);                           
-    font-size: 1.2em;                                      
+    text-align: center;
+    background-color: var(--second-color);
+    padding: 5px;
+    color: var(--accent-color);
+    font-size: 1.2em;
 }
 
-/*Header*/
+/* Header */
 
 header {
     display: flex;
@@ -108,8 +113,126 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Article Section */
 
-/*Footer*/
+.article {
+    background-color: var(--background-color);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: var(--accent-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    color: var(--text-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+
+.post h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: var(--main-color);
+}
+
+.post p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.post a.button {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Sidebar */
+
+.sidebar {
+    margin-top: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    font-size: 1em;
+    color: var(--text-color);
+    background-color: #fff;
+    flex: 1;
+}
+
+.search-box button {
+    background-color: var(--second-color);
+    color: var(--accent-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.search-box button:hover {
+    background-color: var(--highlight-color);
+}
+
+.categories, .affiliate-products {
+    background-color: var(--accent-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.categories h3, .affiliate-products h3 {
+    font-size: 1.5em;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.categories ul, .affiliate-products ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categories li, .affiliate-products li {
+    margin-bottom: 10px;
+}
+
+.categories a, .affiliate-products a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.categories a:hover, .affiliate-products a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 
 .footer {
     background-color: var(--main-color);

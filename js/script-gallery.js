@@ -1,7 +1,6 @@
 // Obtener el modal
 const modal = document.getElementById('galleryModal');
 const modalImg = document.getElementById('modalImage');
-const captionText = document.getElementById('caption');
 
 // Obtener todos los elementos de la galería
 const galleryItems = document.querySelectorAll('.gallery-item img');
@@ -9,9 +8,8 @@ const galleryItems = document.querySelectorAll('.gallery-item img');
 // Añadir eventos de clic a cada imagen
 galleryItems.forEach(item => {
     item.addEventListener('click', function() {
-        modal.style.display = "flex";
+        modal.style.display = "flex"; // Cambia a "flex" para que el modal se muestre centrado
         modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
     });
 });
 
