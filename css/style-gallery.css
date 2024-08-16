@@ -43,6 +43,7 @@ a:hover {
 
 .button:hover {
     background-color: var(--highlight-color);
+    color: var(--accent-color);
 }
 
 
