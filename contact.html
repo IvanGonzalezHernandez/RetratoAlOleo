@@ -43,7 +43,7 @@
         <div class="contact-container">
             <h1>Contáctanos</h1>
             <p>Si estás interesado en encargar un retrato al óleo personalizado pintado a mano por Begoña Hernández, completa el formulario a continuación. Con más de 10 años de experiencia en arte al óleo, garantizamos que cada retrato capturará tus momentos especiales con la máxima calidad.</p>
-            <form action="/submit" method="post" enctype="multipart/form-data">
+            <form action="https://formspree.io/f/mkgwzawd" method="POST">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required aria-required="true">
 
@@ -55,9 +55,6 @@
 
                 <label for="message">Mensaje:</label>
                 <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
-
-                <label for="photo">Adjunta la Foto:</label>
-                <input type="file" id="photo" name="photo" accept="image/*" required aria-required="true">
 
                 <button type="submit" class="button">Enviar</button>
             </form>

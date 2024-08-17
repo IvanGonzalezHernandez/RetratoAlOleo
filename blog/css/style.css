@@ -210,28 +210,6 @@ nav ul li a {
     border-radius: 8px;
 }
 
-.sidebar .search-box {
-    display: flex;
-    margin-bottom: 30px;
-}
-
-.sidebar .search-box input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid var(--text-color);
-    border-radius: 4px 0 0 4px;
-}
-
-.sidebar .search-box button {
-    background-color: var(--second-color);
-    color: var(--accent-color);
-    border: none;
-    padding: 10px;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-}
-
-.sidebar .categories,
 .sidebar .affiliate-products {
     margin-bottom: 30px;
 }
