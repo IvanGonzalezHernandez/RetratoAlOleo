@@ -105,14 +105,23 @@ nav ul li a {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar el artículo */
     transition: transform 0.3s ease;
+    position: relative; /* Hacer que el contenedor `.post` sea relativo para el posicionamiento absoluto de los hijos */
 }
 
 .blog-articles .post:hover {
     transform: translateY(-5px);
 }
 
+.blog-articles .date-main {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 10px; /* Ajusta según la distancia que deseas desde la parte superior */
+    right: 10px; /* Ajusta según la distancia que deseas desde la parte derecha */
+    font-size: 0.9em; /* Tamaño de fuente para la fecha */
+    color: var(--text-color); /* Color gris para la fecha */
+}
+
 .blog-articles .post img {
-    width: 9%; /* Ajusta el ancho de la imagen según lo que necesites */
+    width: 12%; /* Ajusta el ancho de la imagen según lo que necesites */
     height: auto;
     border-radius: 8px;
 }
@@ -197,6 +206,53 @@ nav ul li a {
     margin-top: 20px;
     text-align: center;
 }
+
+/*Articles*/
+.article {
+    background-color: var(--accent-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.article h2 {
+    font-size: 1.5em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    border-bottom: 0.5px solid var(--main-color);
+    padding-bottom: 5px;
+}
+
+.article p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.article .date {
+    font-size: 0.9em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+
+
 
 
 
